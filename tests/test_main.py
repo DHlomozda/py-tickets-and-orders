@@ -101,8 +101,12 @@ def movie_sessions_data(movies_data, cinema_halls_data):
 
 @pytest.fixture()
 def users_data():
-    get_user_model().objects.create_user(username="user1", password="pass1234")
-    get_user_model().objects.create_user(username="user2", password="pass1234")
+    get_user_model().objects.create_user(
+        username="user1", password="pass1234"
+    )
+    get_user_model().objects.create_user(
+        username="user2", password="pass1234"
+    )
 
 
 @pytest.fixture()
